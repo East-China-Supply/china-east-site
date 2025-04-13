@@ -7,9 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #c89b3c; /* ذهبي رملي */
+      --primary: #c8102e;
       --dark: #222;
-      --light: #fff8e1;
+      --light: #f9f9f9;
       --text: #333;
     }
     * { box-sizing: border-box; margin:0; padding:0; }
@@ -18,9 +18,14 @@
       background: var(--light);
       color: var(--text);
       line-height: 1.6;
+      background-image: url('https://images.unsplash.com/photo-1580894732444-0c25818b0f5e?auto=format&fit=crop&w=1470&q=80'), url('https://images.unsplash.com/photo-1598514982846-9a1148d702a2?auto=format&fit=crop&w=1470&q=80');
+      background-repeat: no-repeat, no-repeat;
+      background-position: top left, bottom right;
+      background-size: 50% auto, 50% auto;
+      background-attachment: fixed;
     }
     header {
-      background: linear-gradient(135deg, var(--primary), #a87c00);
+      background: linear-gradient(135deg, var(--primary), #a00);
       color: white;
       padding: 2rem 1rem;
       text-align: center;
@@ -63,9 +68,9 @@
       border-radius: 4px;
       font-size: 0.9rem;
     }
-    main { padding: 2rem 1rem; }
+    main { padding: 2rem 1rem; background-color: rgba(255,255,255,0.85); border-radius: 8px; margin: 2rem; }
     .hero {
-      background: url('https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      background: url('https://source.unsplash.com/1200x600/?china,logistics') center/cover no-repeat;
       border-radius: 8px;
       padding: 4rem 2rem;
       color: white;
