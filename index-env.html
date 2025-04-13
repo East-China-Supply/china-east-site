@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الصين الشرق | توريد المنتجات من الصين</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #c8102e;
+      --dark: #222;
+      --light: #f9f9f9;
+      --text: #333;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Amiri', serif;
+      background: var(--light);
+      color: var(--text);
+      background-image: url('https://images.unsplash.com/photo-1580894732444-0c25818b0f5e?auto=format&fit=crop&w=1470&q=80'), url('https://images.unsplash.com/photo-1598514982846-9a1148d702a2?auto=format&fit=crop&w=1470&q=80');
+      background-repeat: no-repeat, no-repeat;
+      background-position: top left, bottom right;
+      background-size: 50% auto, 50% auto;
+      background-attachment: fixed;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary), #a00);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      max-height: 80px;
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.3rem;
+    }
+    header p {
+      font-size: 1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      background: var(--dark);
+      padding: 0.75rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color .3s;
+    }
+    nav a:hover { color: var(--primary); }
+    .lang-switch {
+      position: absolute;
+      top: 1rem; left: 1rem;
+      z-index: 10;
+    }
+    .lang-switch a {
+      color: white;
+      text-decoration: none;
+      background: rgba(0,0,0,0.3);
+      padding: 0.25rem .5rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    main { padding: 2rem 1rem; background-color: rgba(255,255,255,0.85); border-radius: 8px; margin: 2rem; }
+    .hero {
+      background: url('https://source.unsplash.com/1200x600/?shipping,logistics') center/cover no-repeat;
+      border-radius: 8px;
+      padding: 4rem 2rem;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: rgba(0,0,0,0.4);
+      border-radius: 8px;
+    }
+    .hero-content {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p { font-size: 1.1rem; }
+
+    .sections { display: grid; gap: 2rem; }
+    @media(min-width:768px) {
+      .sections { grid-template-columns: 1fr 1fr; }
+    }
+    section {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    section h3 {
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+    section ul { list-style: disc inside; }
+    section ul li { margin-bottom: 0.5rem; }
+
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem 0;
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact a:hover { color: var(--primary); }
+
+    .social {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .social a {
+      display: inline-block;
+      margin: 0 .5rem;
+      font-size: 1.5rem;
+      color: var(--dark);
+      text-decoration: none;
+      transition: color .3s;
+    }
+    .social a:hover { color: var(--primary); }
+
+    footer {
+      background: var(--dark);
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="lang-switch"><a href="index-en.html">English</a></div>
+    <img src="logo.png" alt="شعار الشركة">
+    <h1>الصين الشرق</h1>
+    <p>نؤمن أي منتج من الصين إلى الشرق الأوسط</p>
+  </header>
+
+  <nav>
+    <a href="#hero">الرئيسية</a>
+    <a href="#about">من نحن</a>
+    <a href="#services">الخدمات</a>
+    <a href="#contact">التواصل</a>
+  </nav>
+
+  <main>
+    <div id="hero" class="hero">
+      <div class="hero-content">
+        <h2>حلول لوجستية وتجارية ذكية</h2>
+        <p>نربطك بالمصنعين في الصين بأفضل جودة وأسعار.</p>
+      </div>
+    </div>
+
+    <div class="sections">
+      <section id="about">
+        <h3>من نحن</h3>
+        <p>نحن شركة الصين الشرق، نوفر خدمات تأمين وشحن المنتجات من الصين إلى الشرق الأوسط باحترافية.</p>
+      </section>
+
+      <section id="services">
+        <h3>خدماتنا</h3>
+        <ul>
+          <li>تأمين المنتجات من الموردين</li>
+          <li>فحص الجودة</li>
+          <li>الشحن البحري والجوي</li>
+          <li>التخليص الجمركي والتوصيل</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="contact">
+        <h3>تواصل معنا</h3>
+        <p><a href="https://wa.me/8615711365104">📱 واتساب: +86 157 1136 5104</a></p>
+        <p><a href="mailto:alshraahkhaled1@gmail.com">📧 البريد الإلكتروني: alshraahkhaled1@gmail.com</a></p>
+      </section>
+    </div>
+
+    <div class="social">
+      <h3>تابعنا على</h3>
+      <a href="https://www.facebook.com/astyradalsyn" target="_blank">فيسبوك</a>
+      <a href="https://www.instagram.com/chin_a9249/" target="_blank">إنستغرام</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 الصين الشرق - جميع الحقوق محفوظة.
+  </footer>
+</body>
+</html>
